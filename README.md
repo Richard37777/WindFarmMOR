@@ -1,6 +1,6 @@
 %%%%%% 0. DESCRIPTIONS %%%%%%
 
--This is a demo of the data-driven model order reduction method proposed in the paper ''Model Order Reduction of Large-Scale Wind Farms: A Data-Driven Approach''. Provided with a simple benchmark model of the multiple-input-multiple-output (MIMO) systems, the corresponding reduced-order models (ROMs) and bode plots are produced by this illustrative demo.
+This is a demo of the data-driven model order reduction method proposed in the paper ''Model Order Reduction of Large-Scale Wind Farms: A Data-Driven Approach''. Provided with a simple benchmark model of the multiple-input-multiple-output (MIMO) systems, the corresponding reduced-order models (ROMs) and bode plots are produced by this illustrative demo.
 
 %%%%%% 1. SYSTEM REQUIREMENTS %%%%%%
 - Dependencies: to run the code an installation of MATLAB/Simulink R2023b or later versions is required.
