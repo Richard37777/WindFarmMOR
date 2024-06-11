@@ -25,16 +25,16 @@ This is a demo of the data-driven model order reduction method proposed in the p
 - Expected run time: around five minutes, normally no more than ten minutes. This takes time because the Full Order Model(FOM) is simulated to collect the data. If the data is already collected (e.g. from the real system), then the running time could be significantly reduced by loading the collected data.
 
 %%%%%% 4. INSTRUCTIONS FOR USE %%%%%%
-- Software description: the software is organised in several MATLAB m files and Simulink slx files. As far as the MATLAB files are concerned, one of them is the script producing the figures and ROMs, and the rest are MATLAB functions used within the script. The two Simulink slx files represent the direct and swapped interconnection as Fig 1 and Fig 2 in the manuscript. A brief description of the files is as follows.
+- Software description: the software is organised in several MATLAB m files and Simulink slx files. As far as the MATLAB files are concerned, one of them is the script producing the figures and ROMs, and the rest are MATLAB functions used within the script. The two Simulink slx files represent the direct and swapped interconnection as Fig 1 and Fig 2 in the paper. A brief description of the files is as follows.
 	+ run_MOR.m: scripts to run to obtain the MATLAB figures and the ROMs.
         + FOM.mat: the linearised FOM to be reduced. Can be changed with user's own models.	
-        + Algorithm_1.m: Algorithm 1 as introduced in the Section 3 of the manuscript.
-        + Algorithm_2.m: Algorithm 2 as introduced in the Section 3 of the manuscript.
+        + Algorithm_1.m: Algorithm 1 as introduced in the Section 3 of the paper.
+        + Algorithm_2.m: Algorithm 2 as introduced in the Section 3 of the paper.
         + drawbodeplot.m: MATLAB function to draw the bode plots.
-        + Interpolation.m: construct the associated S and Q matrices for the selected interpolation points as introduced in the Section 2A and 2B in the manuscript. 
-        + Interconnection_Directed.slx: the model of direct interconnection as Fig 1 in the manuscript. run automatically in the "run_MOR.m" to collect the data for Algorithm 1. 
+        + Interpolation.m: construct the associated S and Q matrices for the selected interpolation points as introduced in the Section 2A and 2B in the paper. 
+        + Interconnection_Directed.slx: the model of direct interconnection as Fig 1 in the paper. run automatically in the "run_MOR.m" to collect the data for Algorithm 1. 
         + Interconnection_Directed.slxc: Simulink cache for speeding up the simulation of "Interconnection_Directed.slx".      
-        + Interconnection_Swapped.slx: the model of swapped interconnection as Fig 2 in the manuscript. run automatically in the "run_MOR.m" to collect the data for Algorithm 2. 
+        + Interconnection_Swapped.slx: the model of swapped interconnection as Fig 2 in the paper. run automatically in the "run_MOR.m" to collect the data for Algorithm 2. 
         + Interconnection_Swapped.slxc: Simulink cache for speeding up the simulation of "Interconnection_Swapped.slx".    
         + "slprj" folder: contains necessary files to run the slx files. 
 - How to run the code on the data: the MATLAB script "run_MOR.m" can be run as described at point 3. They internally run the previously mentioned MATLAB functions, which in turn process the data collected from the slx files to produce the ROMs.
