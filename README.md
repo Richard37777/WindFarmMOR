@@ -36,7 +36,6 @@ This is a demo of the data-driven model order reduction method proposed in the p
         + Interconnection_Directed.slxc: Simulink cache for speeding up the simulation of "Interconnection_Directed.slx".      
         + Interconnection_Swapped.slx: the model of swapped interconnection as Fig 2 in the paper. run automatically in the "run_MOR.m" to collect the data for Algorithm 2. 
         + Interconnection_Swapped.slxc: Simulink cache for speeding up the simulation of "Interconnection_Swapped.slx".    
-        + "slprj" folder: contains necessary files to run the slx files. 
 - How to run the code on the data: the MATLAB script "run_MOR.m" can be run as described at point 3. They internally run the previously mentioned MATLAB functions, which in turn process the data collected from the slx files to produce the ROMs.
 
 - Production instructions: by running the MATLAB script "run_MOR.m", the bode plots of the direct interconnection, swapped interconnection and the ROMs are obtained as an output. The ROMs are saved as "ROM.mat"(Model-based) and "ROM_DD.mat"(Data-driven) in the same folder.
